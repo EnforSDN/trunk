@@ -1,0 +1,24 @@
+INSTALLATION and RUNNING:
+
+1) NetfilterQueue. GO TO: https://pypi.python.org/pypi/NetfilterQueue
+2) netaddr. GO TO: http://pythonhosted.org/netaddr/installation.html
+3) Mininet: GO TO: http://mininet.org/download/
+
+4) INSTALL:
+sudo apt-get install build-essential python-dev libnetfilter-queue-dev
+sudo pip install NetfilterQueue
+sudo pip install netaddr
+sudo pip install networkx
+
+5) Run the following commands to upgrade the Mininet OVS instance to the latest v2.0:
+sudo apt-get install python-software-properties software-properties-common
+sudo add-apt-repository ppa:mighost/ppa
+sudo apt-get update
+/etc/init.d/openvswitch-switch stop
+/etc/init.d/openvswitch-controller stop
+sudo apt-get install openvswitch-common  openvswitch-datapath-dkms  openvswitch-switch
+/etc/init.d/openvswitch-switch start
+
+6) execute: sudo ./runCmds
+(in case of failure, run: chmod +x runCmds)
+once fininshed, the figures are generated in fattree44_32h folder.
