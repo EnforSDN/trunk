@@ -23,4 +23,4 @@ sudo apt-get install openvswitch-common  openvswitch-datapath-dkms  openvswitch-
 (in case of failure, run: chmod +x runCmds)
 once fininshed, the figures are generated in fattree44_32h folder.
 
-For any question conatact: yanivb@il.ibm.com
+For any question contact: yanivb@il.ibm.com
